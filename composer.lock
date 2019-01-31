@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1166b2035bc34010f52922f7c55839ff",
+    "content-hash": "d1ac800e63892d80f516a6ff1838324b",
     "packages": [
         {
             "name": "cache/adapter-common",
@@ -72,6 +72,82 @@
                 "tag"
             ],
             "time": "2018-07-08T13:04:33+00:00"
+        },
+        {
+            "name": "cache/chain-adapter",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-cache/chain-adapter.git",
+                "reference": "c2094fb934c90ce7e9bd2f41209a76ce664b763e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-cache/chain-adapter/zipball/c2094fb934c90ce7e9bd2f41209a76ce664b763e",
+                "reference": "c2094fb934c90ce7e9bd2f41209a76ce664b763e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "cache/adapter-common": "^1.0",
+                "cache/tag-interop": "^1.0",
+                "php": "^5.6 || ^7.0",
+                "psr/cache": "^1.0",
+                "psr/log": "^1.0"
+            },
+            "provide": {
+                "psr/cache-implementation": "^1.0"
+            },
+            "require-dev": {
+                "cache/array-adapter": "^1.0",
+                "cache/filesystem-adapter": "^1.0",
+                "cache/integration-tests": "^0.16",
+                "phpunit/phpunit": "^5.7.21"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cache\\Adapter\\Chain\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Scherer",
+                    "email": "aequasi@gmail.com",
+                    "homepage": "https://github.com/aequasi"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/nyholm"
+                }
+            ],
+            "description": "A PSR-6 cache implementation using chain. This implementation supports tags",
+            "homepage": "http://www.php-cache.com/en/latest/",
+            "keywords": [
+                "Chain",
+                "cache",
+                "psr-6",
+                "tag"
+            ],
+            "time": "2017-07-17T05:38:48+00:00"
         },
         {
             "name": "cache/filesystem-adapter",
